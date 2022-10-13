@@ -5,8 +5,11 @@ afc_east_west_wins = {'Bills': 4,
                       'Chiefs': 3,
                       'Chargers': 3,
                       'Broncos': 2,
-                      'Raiders': 1}
+                      'Raiders': 1,
+                      'Your Fantasy Team': 9}
 
 largest_so_far = 'Raiders'
 for team_name in afc_east_west_wins.keys():
-    print(f"The {team_name} have {afc_east_west_wins[team_name]} wins so far")
+    if afc_east_west_wins[team_name] > afc_east_west_wins[largest_so_far]:
+        largest_so_far = team_name
+print(f"The team: {largest_so_far} has the most wins with {afc_east_west_wins[largest_so_far]} wins")

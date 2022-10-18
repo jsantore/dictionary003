@@ -12,4 +12,5 @@ largest_so_far = 'Raiders'
 for team_name in afc_east_west_wins.keys():
     if afc_east_west_wins[team_name] > afc_east_west_wins[largest_so_far]:
         largest_so_far = team_name
-print(f"The team: {largest_so_far} has the most wins with {afc_east_west_wins[largest_so_far]} wins")
+print(f"The team: {largest_so_far}\
+ has the most wins with {afc_east_west_wins[largest_so_far]} wins")
